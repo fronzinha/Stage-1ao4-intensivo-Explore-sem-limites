@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --base-font: "Mulish", sans-serif;
+    --white: #ffffff;
+    --light-gray: #f9f4fb;
+    --primary-color-text: #b52184;
+    --secondary-color-text: #312d64;
+    --gradient-background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+}
+
+body {
+    background: var(--light-gray);
+    font-family: var(--base-font);
+}
+
+img {
+    width: 100%;
+}
