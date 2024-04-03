@@ -25,3 +25,175 @@ body {
 img {
     width: 100%;
 }
+
+.hero-text {
+    color: var(--primary-color-text);
+    font-size: 3.2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero-text P {
+    color: var(--secondary-color-text);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.button-down img {
+    border: solid var(--primary-color-text) 4px;
+    width: 5.9rem;
+    height: 10rem;
+    border-radius: 76rem;
+    padding: 1rem;
+    margin-top: 3.5rem;
+    transition: all .7s ease-in-out
+}
+
+.button-down img:hover {
+    border: solid var(--primary-color-text) 4px;
+    width: 5.9rem;
+    height: 10rem;
+    border-radius: 76rem;
+    padding: 1rem;
+    margin-top: 3.5rem;
+    transform: translateY(30%);
+}
+
+.cards {
+    background-color: var(--secondary-color-text);
+    margin-top: 9rem;
+    padding: 5.3rem 3.9rem 5.5rem;
+    display: flex;
+    gap: 3.3rem;
+    flex-direction: column;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 2rem;
+    display: flex;
+    padding: 2.6rem;
+    flex-direction: column;
+    box-shadow: 0px 3.311px 13.243px 0px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card img {
+    width: 8rem;
+    height: 8rem;
+    animation: rotate 8s linear infinite;
+    cursor: pointer;
+}
+
+.card-text h2 {
+    font-size: 3rem;
+    color: var(--primary-color-text);
+    font-weight: 900;
+    margin-top: 3.3rem;
+}
+
+.card-text p {
+    font-size: 1.6rem;
+    color: var(--secondary-color-text);
+    font-weight: 600;
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+#contact h2 {
+    color: var(--primary-color-text);
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    gap: 1.2rem;
+    flex-direction: column;
+}
+
+#contact input {
+    width: 35rem;
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+    border-radius: 1.6rem;
+    border: solid var(--secondary-color-text) .2rem;
+    color: var(--secondary-color-text);
+    padding: 1.2rem 1.6rem 1.2rem 4.6rem;
+    cursor: pointer;
+}
+
+#contact textarea {
+    color: var(--secondary-color-text);
+    width: 35rem;
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+    border-radius: 1.6rem;
+    border: solid var(--secondary-color-text) .2rem;
+    background-color: var(--light-gray);
+    cursor: pointer;
+}
+
+#contact fieldset input::placeholder,
+#contact textarea::placeholder {
+    color: var(--secondary-color-text);
+}
+
+#name {
+    background: url(./images/person.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+#email {
+    background: url(./images/mail.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+button {
+    font-size: 1.4rem;
+    width: 15rem;
+    height: 4.5rem;
+    padding: 1.6rem;
+    border-radius: 1.6rem;
+    background: var(--gradient-background);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    line-height: 2.4rem;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(.98);
+    transition: all 0.5s;
+}
+
+footer {
+    background: var(--gradient-background);
+    padding: 3.2rem 1.6rem;
+    margin-top: 6rem;
+}
+
+footer p {
+    color: var(--white);
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+}

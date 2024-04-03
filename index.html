@@ -21,7 +21,7 @@
         <div class="hero-text">
             <h1>Explore sem Limites</h1>
             <p>Porque o aprendizado é contínuo</p>
-            <a href="#buttons" class="button-down">
+            <a href="#contact" class="button-down">
                 <img src="./images/arrow-down.svg" alt="Seta apontada para baixo">
             </a>
         </div>
@@ -64,20 +64,21 @@
             <h2>Entre em contato</h2>
             <fieldset>
                 <div>
-                    <input type="text" id="name" placeholder="Seu nome">
+                    <input type="text" id="name" placeholder="Seu nome" required>
                 </div>
 
                 <div>
-                    <input type="email" id="email" placeholder="Email">
+                    <input type="email" id="email" placeholder="Email" required>
                 </div>
 
                 <div>
                     <label for="area"></label>
-                    <textarea id="area" cols="30" rows="15" placeholder="Digite sua mensagem aqui..."></textarea>
+                    <textarea id="area" cols="30" rows="10" placeholder="Digite sua mensagem aqui..."
+                        required></textarea>
                 </div>
+                <button type="submit">Enviar Mensagem</button>
             </fieldset>
 
-            <button type="button">Enviar Mensagem</button>
         </form>
     </section>
 
