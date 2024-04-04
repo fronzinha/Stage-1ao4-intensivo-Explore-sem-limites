@@ -21,7 +21,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     background: var(--light-gray);
     font-family: var(--base-font);
@@ -65,7 +64,7 @@ img {
 }
 
 .cards {
-    background-color: var(--secondary-color-text);
+    background: var(--gradient-background);
     margin-top: 9rem;
     padding: 5.3rem 3.9rem 5.5rem;
     display: flex;
@@ -114,7 +113,7 @@ img {
     text-align: justify;
 }
 
-#contact h2 {
+.contact h2 {
     color: var(--primary-color-text);
     font-size: 3.2rem;
     font-weight: 900;
@@ -122,7 +121,7 @@ img {
     margin-bottom: 4rem;
 }
 
-#contact {
+.contact {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -135,7 +134,7 @@ fieldset {
     flex-direction: column;
 }
 
-#contact input {
+.contact input {
     width: 35rem;
     padding: 1.2rem 1.6rem 1.2rem 1.4rem;
     border-radius: 1.6rem;
@@ -145,7 +144,7 @@ fieldset {
     cursor: pointer;
 }
 
-#contact textarea {
+.contact textarea {
     color: var(--secondary-color-text);
     width: 35rem;
     padding: 1.2rem 1.6rem 1.2rem 1.4rem;
@@ -155,8 +154,8 @@ fieldset {
     cursor: pointer;
 }
 
-#contact fieldset input::placeholder,
-#contact textarea::placeholder {
+.contact fieldset input::placeholder,
+.contact textarea::placeholder {
     color: var(--secondary-color-text);
 }
 
@@ -185,6 +184,10 @@ button {
     cursor: pointer;
 }
 
+.stars {
+    display: none;
+}
+
 button:hover {
     transform: scale(.98);
     transition: all 0.5s;
@@ -202,4 +205,87 @@ footer p {
     line-height: 2.4rem;
     font-weight: 600;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        max-height: 83.6rem;
+    }
+
+    .hero .astronaut {
+        order: 2;
+        margin-right: 1rem;
+    }
+
+    .hero .hero-text {
+        order: 1;
+        margin-top: 31rem;
+        margin-left: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    .hero-text {
+        font-size: 3.5rem;
+    }
+
+    .hero-text p {
+        font-size: 3.2rem;
+    }
+
+    .button-down {
+        margin-top: 10rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6rem;
+    }
+
+    .card h2 {
+        font-size: 3.5rem;
+    }
+
+    .card p {
+        font-size: 2rem;
+    }
+
+    .contact {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        margin-left: 10rem;
+    }
+
+    .stars {
+        flex: 1;
+        display: block;
+        margin-left: 10rem;
+    }
+
+    footer {
+        margin-top: -.3rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    button {
+        margin-bottom: 9rem;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stars {
+        display: none;
+    }
 }
